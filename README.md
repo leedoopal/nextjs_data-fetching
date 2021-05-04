@@ -1,1 +1,8 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+#Data Fetching
+
+#### Next.js > Data Fetching
+
+실행
+```javascript
+npm run dev -> localhost:3000
+```

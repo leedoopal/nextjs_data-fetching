@@ -8,8 +8,8 @@ function Home(props) {
 
   return (
     <ul>
-      {products.map(product => <li
-        key={product.id}>
+      {products.map(product =>
+        <li key={product.id}>
         <Link href={`/${product.id}`}>
           {product.title}
         </Link>

@@ -20,6 +20,14 @@ export async function getStaticProps() {
 
   if (!data) {
     return {
+      redirect: {
+        destination: '/no-data'
+      }
+    }
+  }
+
+  if (!data.products.length) {
+    return {
       notFound: true,
     }
   }
@@ -27,7 +35,8 @@ export async function getStaticProps() {
   return {
     props: {
       products: data.products
-    }
+    },
+    revalidate: 10,
   }
 }
 

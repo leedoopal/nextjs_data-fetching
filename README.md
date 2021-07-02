@@ -1,6 +1,6 @@
 #Data Fetching
 
-#### Next.js > Data Fetching
+#### Next.js, SWR
 
 실행
 ```javascript
